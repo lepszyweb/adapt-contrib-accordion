@@ -10,7 +10,7 @@
       "properties": {
         "_supportedLayout": {
           "type": "string",
-          "title": "Supported layout",
+          "title": "Obsługiwany układ",
           "default": "full-width",
           "enum": [
             "full-width",
@@ -23,7 +23,7 @@
         },
         "instruction": {
           "type": "string",
-          "title": "Instruction",
+          "title": "Instrukcja",
           "default": "",
           "_adapt": {
             "translatable": true
@@ -31,8 +31,8 @@
         },
         "_setCompletionOn": {
           "type": "string",
-          "title": "Completion criteria",
-          "description": "Whether completion is based on the learner having viewed all the accordion items - or just having viewed the component",
+          "title": "Kryteria ukończenia",
+          "description": "Czy ukończenie jest oparte na tym, że uczeń obejrzał wszystkie elementy akordeonu, czy tylko obejrzał komponent",
           "default": "allItems",
           "enum": [
             "inview",
@@ -48,7 +48,7 @@
             "properties": {
               "title": {
                 "type": "string",
-                "title": "Title",
+                "title": "Tytuł",
                 "default": "",
                 "_adapt": {
                   "translatable": true
@@ -56,8 +56,8 @@
               },
               "body": {
                 "type": "string",
-                "title": "Body",
-                "description": "This is the item body text that is hidden until the item title is clicked on",
+                "title": "Treść główna",
+                "description": "Jest to tekst treści elementu, który jest ukryty do momentu kliknięcia na tytuł elementu.",
                 "default": "",
                 "_adapt": {
                   "translatable": true
@@ -66,13 +66,13 @@
               },
               "_graphic": {
                 "type": "object",
-                "title": "Graphic",
+                "title": "Grafika",
                 "default": {},
                 "properties": {
                   "alt": {
                     "type": "string",
-                    "title": "Alternative text",
-                    "description": "A description of the image; required when it has meaning that must be conveyed to the learner. For 'decorative' images, leave this blank",
+                    "title": "Tekst alternatywny",
+                    "description": "Opis obrazka; wymagany, gdy ma on znaczenie, które musi być przekazane uczącemu się. W przypadku obrazów 'dekoracyjnych' należy pozostawić to pole puste",
                     "default": "",
                     "_adapt": {
                       "translatable": true
@@ -81,8 +81,8 @@
                   "src": {
                     "type": "string",
                     "isObjectId": true,
-                    "title": "Source",
-                    "description": "Optional image which will be rendered with the item body text",
+                    "title": "Źródło",
+                    "description": "Opcjonalny obrazek, który będzie renderowany z tekstem treści elementu",
                     "_backboneForms": {
                       "type": "Asset",
                       "media": "image"
@@ -90,8 +90,8 @@
                   },
                   "attribution": {
                     "type": "string",
-                    "title": "Attribution",
-                    "description": "Text to be displayed as an attribution",
+                    "title": "Atrybucja",
+                    "description": "Tekst, który ma być wyświetlany jako atrybut",
                     "default": "",
                     "_adapt": {
                       "translatable": true
@@ -101,8 +101,8 @@
               },
               "_classes": {
                 "type": "string",
-                "title": "Custom classes",
-                "description": "Custom classes that are applied to the accordion item. Supported classes 'align-image-left' and 'align-image-right' are available to align item image to the left or right in desktop view. On smaller screens the item image defaults underneath the item body text. Additional classes can be used but they must be predefined in one of the Less files. Separate multiple classes with a space",
+                "title": "Własne klasy ",
+                "description": "Niestandardowe klasy, które są stosowane do elementu akordeonu. Obsługiwane klasy 'align-image-left' i 'align-image-right' są dostępne, aby wyrównać obraz elementu do lewej lub prawej strony w widoku pulpitu. Na mniejszych ekranach obrazek elementu jest domyślnie umieszczany pod tekstem treści elementu. Dodatkowe klasy mogą być używane, ale muszą być predefiniowane w jednym z plików Less. Oddziel wiele klas spacją",
                 "default": ""
               }
             }
@@ -110,13 +110,13 @@
         },
         "_shouldCollapseItems": {
           "type": "boolean",
-          "title": "Automatically collapse items",
-          "description": "If disabled, upon expansion of an accordion item, any previously expanded items will not be collapsed",
+          "title": "Automatycznie zwijaj elementy",
+          "description": "Jeśli wyłączona, po rozwinięciu elementu akordeonu, wszystkie poprzednio rozwinięte elementy nie zostaną zwinięte.",
           "default": true
         },
         "_shouldExpandFirstItem": {
           "type": "boolean",
-          "title": "Expand first item by default",
+          "title": "Rozwiń domyślnie pierwszy element",
           "default": false
         }
       }

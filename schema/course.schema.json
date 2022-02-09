@@ -18,8 +18,8 @@
               "properties": {
                 "ariaRegion": {
                   "type": "string",
-                  "title": "ARIA region",
-                  "default": "List of expandable sections. Select each button to expand the content.",
+                  "title": "Region ARIA",
+                  "default": "Lista rozwijalnych sekcji. Wybierz każdy przycisk, aby rozwinąć zawartość.",
                   "_adapt": {
                     "translatable": true
                   }
