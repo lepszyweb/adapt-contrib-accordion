@@ -6,8 +6,8 @@
   "bugs": "https://github.com/lepszyweb/adapt-contrib-accordion/issues",
   "component" : "accordion",
   "targetAttribute": "_accordion",
-  "displayName" : "Accordion",
-  "description": "An accordion component that displays clickable titles, which reveal display text",
+  "displayName" : "Akordeon",
+  "description": "Komponent akordeonowy, który wyświetla klikalne tytuły, które odsłaniają wyświetlany tekst",
   "main": "/js/adapt-contrib-accordion.js",
   "keywords": [
     "adapt-plugin",
